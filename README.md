@@ -1,4 +1,4 @@
-# javascript-root-project
+# the-snake-game
 
 
 TayfunMell <3<3
