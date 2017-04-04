@@ -72,6 +72,6 @@ function spawnFood() {
 
 function speedUp() {
   clearInterval(tick);
-  tickSpeed -= 2;
+  tickSpeed -= 4;
   Tick(tickSpeed);
 }
