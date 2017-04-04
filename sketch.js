@@ -1,14 +1,15 @@
 var snake;
-var scl = 10;
+var scl;
 var tick;
 var food;
 var p;
 var s;
-var tickSpeed = 100;
+var tickSpeed = 150;
 var keyTimer = 10;
 
 function setup() {
-  createCanvas(windowWidth/2, windowWidth*384/683/2);
+  createCanvas(windowWidth/2, windowWidth*9/16/2);
+  scl = gcd(width, height);
   snake = new Snake();
   spawnFood();
   Tick(tickSpeed);
@@ -72,6 +73,18 @@ function spawnFood() {
 
 function speedUp() {
   clearInterval(tick);
-  tickSpeed -= 4;
+  tickSpeed -= 5;
   Tick(tickSpeed);
+}
+
+function gcd(a,b) {
+    if (a < 0) a = -a;
+    if (b < 0) b = -b;
+    if (b > a) {var temp = a; a = b; b = temp;}
+    while (true) {
+        if (b == 0) return a;
+        a %= b;
+        if (a == 0) return b;
+        b %= a;
+    }
 }

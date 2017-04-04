@@ -1,6 +1,6 @@
 function Snake() {
-    this.x = width / 2;
-    this.y = height / 2;
+    this.x = 0;
+    this.y = 0;
     this.xSpeed = 0;
     this.ySpeed = 0;
     this.total = 0;
@@ -67,8 +67,8 @@ function Snake() {
     this.reset = function () {
         this.total = 0;
         this.tail = [];
-        this.x = width / 2;
-        this.y = height / 2;
+        this.x = 0;
+        this.y = 0;
         this.xSpeed = 0;
         this.ySpeed = 0;
         spawnFood();
