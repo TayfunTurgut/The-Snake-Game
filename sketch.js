@@ -5,7 +5,7 @@ var food;
 var p;
 var s;
 var tickSpeed = 150;
-var keyTimer = 10;
+var keyTimer = 6;
 
 function setup() {
   createCanvas(windowWidth/2, windowWidth*9/16/2);

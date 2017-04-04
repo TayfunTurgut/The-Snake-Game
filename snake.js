@@ -71,6 +71,7 @@ function Snake() {
         this.y = 0;
         this.xSpeed = 0;
         this.ySpeed = 0;
+        tickSpeed = 150;
         spawnFood();
     }
 }
