@@ -8,7 +8,7 @@ var tickSpeed = 100;
 var keyTimer = 10;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth*0.75, windowHeight*0.75);
   snake = new Snake();
   spawnFood();
   Tick(tickSpeed);
