@@ -15,7 +15,7 @@ function setup() {
   Tick(tickSpeed);
   p = document.getElementById("score");
   s = document.getElementById("highScore");
-  if (localStorage.highScore == null) {
+  if (localStorage._highScore == null) {
     localStorage._highScore = "0";
   }
 }
